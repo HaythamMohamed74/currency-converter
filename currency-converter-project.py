@@ -20,7 +20,7 @@ class RealTimeCurrencyConverter():
         amount = round(amount * self.currencies[to_currency], 4) 
         return amount
 
-class App(tk.Tk):
+class AppTik(tk.Tk):
 
     def __init__(self, converter):
         tk.Tk.__init__(self)
