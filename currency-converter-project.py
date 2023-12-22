@@ -31,7 +31,7 @@ class AppTik(tk.Tk):
         self.geometry("500x200")
         
         # Label
-        self.intro_label = Label(self, text = 'Welcome to Real Time Currency Convertor',  fg = 'blue', relief = tk.RAISED, borderwidth = 3)
+        self.intro_label = Label(self, text = 'Welcome to Real Time Currency Convertor',  fg = 'red', relief = tk.RAISED, borderwidth = 3)
         self.intro_label.config(font = ('Courier',15,'bold'))
 
         self.date_label = Label(self, text = f"1 Indian Rupee equals = {self.currency_converter.convert('INR','USD',1)} USD \n Date : {self.currency_converter.data['date']}", relief = tk.GROOVE, borderwidth = 5)
